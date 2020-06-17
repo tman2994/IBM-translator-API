@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoadFragment">
+
+    <fragment
+        android:id="@+id/LoadFragment"
+        android:name="com.oni.ibmtranslator.LoadFragment"
+        android:label="Load Fragment"
+        tools:layout="@layout/fragment_load">
+
+        <action
+            android:id="@+id/action_LoadFragment_to_MainFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.oni.ibmtranslator.MainFragment"
+        android:label="Main Fragment"
+        tools:layout="@layout/fragment_main">
+    </fragment>
+</navigation>
